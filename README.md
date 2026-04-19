@@ -86,7 +86,7 @@ Groupes de sécurité
 |G_IT              | Informatique        |
 
 
-#Comptes utilisateurs
+# Comptes utilisateurs
 
 |Utilisateurs      | Groupe d’appartenance  |  Rôle               |
 |------------------|------------------------|---------------------|
@@ -118,7 +118,7 @@ Groupes de sécurité
 
 
 
-#Tests de sécurité
+# Tests de sécurité
 Résultats des tests
 
 | Test                          | Résultat     |
@@ -130,14 +130,14 @@ Résultats des tests
 | Tous → Public	                | AUTORISÉ     |
 
 
-#Restrictions outils système
+# Restrictions outils système
 Les outils suivants sont réservés au groupe G_IT (informatique) :
 - PowerShell
 -CMD (Invite de commandes)
 -Panneau de configuration
 -Éditeur du registre
 
-#Scripts PowerShell
+# Scripts PowerShell
 
 | Script                          | Fonction                                        |
 |---------------------------------|-------------------------------------------------|
@@ -148,7 +148,7 @@ Les outils suivants sont réservés au groupe G_IT (informatique) :
 | 99_cleanup.ps1		              | Nettoyage complet (suppression réversible)      |
 
 
-#Extrait (01_create_resources.ps1)
+# Extrait (01_create_resources.ps1)
 ```
 $jsonPath = ".\json\ressource.json"
 $config = Get-Content $jsonPath | ConvertFrom-Json
@@ -161,7 +161,7 @@ foreach ($folder in $config.structure.PSObject.Properties.Name) {
 }
 ```
 
-#Captures d’écran
+# Captures d’écran
 Environnement de développement
 https://screenshots/01-powershell-ise.png	
 Édition du script dans PowerShell ISE
@@ -195,7 +195,7 @@ Accès autorisé / bloqué
 
 
 
-#Exécution
+# Exécution
 Prérequis
 - Windows Server / Windows 10/11 (poste ou VM)
 - PowerShell exécuté en Administrateur
@@ -204,7 +204,7 @@ Prérequis
 Set-ExecutionPolicy Unrestricted -Force
 ```
 
-#Ordre d’exécution recommandé
+# Ordre d’exécution recommandé
 ```
 # 1. Création de l’arborescence
 .\scripts\01_create_resources.ps1
@@ -222,7 +222,7 @@ Set-ExecutionPolicy Unrestricted -Force
 .\scripts\99_cleanup.ps1
 ```
 
-#Équipe
+# Équipe
 |Personne      | Rôle                     |  Livrables                                 |
 |--------------|--------------------------|--------------------------------------------|
 | Syrine	     | Arborescence             | ressource.json + 01_create_resources.ps1   |
