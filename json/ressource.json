@@ -1,0 +1,14 @@
+{
+  "base": "D:\\Hopital",
+  "structure": {
+    "Dossiers_Patients": {},
+    "Soins": {},
+    "RH": {},
+    "Finance": {},
+    "Comptes_Rendus": {},
+    "Communication": {},
+    "Outils_Systeme": {},
+    "Direction": {},
+    "Public": {}
+  }
+}
